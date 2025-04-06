@@ -16,6 +16,6 @@ return {
 
   config = function()
 
-    vim.keymap.set("n", "<C-e>", ":Neotree filesystem reveal left<CR>", {})
+    vim.keymap.set("n", "<C-e>", "<Cmd>Neotree toggle<CR>", {})
   end
 }
