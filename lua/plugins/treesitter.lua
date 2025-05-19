@@ -1,14 +1,22 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    config = function () 
-      local configs = require("nvim-treesitter.configs")
-
-      configs.setup({
-          ensure_installed = {'lua', 'javascript', "php", "html"},
-          highlight = { enable = true },
-          indent = { enable = true },
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  config = function()
+    require("lazy").setup({
+      {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        lazy = false,
+        opts = {
+          ensure_installed = { "astro", "tsx", "typescript", "html", "lua", "php", "html", "javascript"},
           auto_install = true,
-        })
-    end
- }
+          highlight = {
+            enable = true,
+          },
+        },
+      },
+    })
+  end,
+}
+
+--          ensure_installed = {'astro','lua', 'javascript', "php", "html"},

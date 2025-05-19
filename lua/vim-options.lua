@@ -12,3 +12,7 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+vim.opt.mouse = "a"
+vim.opt.ignorecase = true
+
