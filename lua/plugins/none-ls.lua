@@ -6,10 +6,10 @@ return {
       sources = {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.prettier.with({
-          filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact"},
+          filetypes = { "html", "css", "javascript", "javascriptreact", "typescript", "typescriptreact",},
         }),
 
-        null_ls.builtins.formatting.phpcsfixer,
+        null_ls.builtins.formatting.phpcsfixer
         
         --null_ls.builtins.diagnostics.duster,
 
