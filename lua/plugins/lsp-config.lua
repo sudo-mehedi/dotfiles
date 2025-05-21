@@ -34,6 +34,14 @@ return {
 			})
 
 			lspconfig.intelephense.setup({
+        filetypes = {"php", "blade"},
+        settings = {
+          intelephense = {
+            stubs = {
+              "Laravel"
+            }
+          }
+        },
 				capabilities = capabilities,
 			})
 

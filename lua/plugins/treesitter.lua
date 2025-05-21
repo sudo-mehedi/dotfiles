@@ -24,6 +24,9 @@ return {
         branch = "main",
       },
       filetype = "blade",
+      indent = {
+        enable = true
+      }
     }
   end,
 }
